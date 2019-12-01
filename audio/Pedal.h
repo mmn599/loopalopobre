@@ -38,13 +38,13 @@ class Pedal
 
         static Pedal* get_instance()
         {
-            if(!m_pedal_instance)
+            if(!pedal_instance)
                 throw std::runtime_error("Pedal does not exist!");
 
-            return m_pedal_instance;
+            return pedal_instance;
         }
 
-        static Pedal* m_pedal_instance;
+        static Pedal* pedal_instance;
         
     private:
 
@@ -54,7 +54,7 @@ class Pedal
 
         static void set_instance(Pedal* pedal)
         {
-            m_pedal_instance = pedal;
+            pedal_instance = pedal;
         }
 
         IControl& m_control;

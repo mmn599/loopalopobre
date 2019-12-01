@@ -2,6 +2,8 @@
 
 #include <thread>
 
+Pedal* Pedal::pedal_instance = nullptr;
+
 extern "C" void begin() 
 {
     std::thread pedal_thread(Pedal::begin);
@@ -10,8 +12,8 @@ extern "C" void begin()
 
 extern "C" void btn_pressed(int btn_id)
 {
-    Pedal* instance = Pedal::get_instance();
-    instance->notify_btn_pressed(btn_id);
+    auto pedal = Pedal::get_instance();
+    pedal->notify_btn_pressed(btn_id);
 }
 
 
