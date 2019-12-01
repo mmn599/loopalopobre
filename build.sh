@@ -8,5 +8,5 @@ pyfigloc=$(python -c "import os; import pyfiglet; print(os.path.dirname(pyfiglet
 echo $#
 if [ $# -gt 0 ]
 then
-pyinstaller -F --add-data 'libpedal.so:.' --add-data "$pyfigloc:./pyfiglet" loopalopobre.py
+pyinstaller -F --add-data 'libpedal.so:.' --add-data "$pyfigloc:./pyfiglet" loopalopobre.py --windowed
 fi
