@@ -109,7 +109,7 @@ class Audio: public IAudio
             for(int frame_num=0; frame_num<frames_per_buffer; frame_num++)
             {
                 auto live_sample = get_sample((sample_t*)input_buffer, frame_num);
-                auto output_sample = 5 * control->get_next_output(live_sample);
+                auto output_sample = 10 * control->get_next_output(live_sample);
                 set_output((sample_t*) output_buffer, frame_num, output_sample);
             }
 
