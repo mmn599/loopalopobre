@@ -48,7 +48,7 @@ charmap = {
 ascii_banner = pyfiglet.figlet_format("Loop a lo Pobre")
 print(ascii_banner)
 while True:
-    val = getch()
+    val = str(getch()).lower()
     if val == '\x03':
         break
     if val in charmap:
