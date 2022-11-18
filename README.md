@@ -6,6 +6,4 @@ loopalopobre is a software loop pedal for guitar and other instruments. It attem
 
 loopalopobre is built and tested for macOS. The software uses [portaudio](http://www.portaudio.com) for Audio APIs, so it would not be difficult to get things going on Windows or Linux.
 
-TODO: A video showing setup and usage.
-
-["a lo pobre" refers to a Chilean and Peruvian dish.](https://en.wikipedia.org/wiki/Lomo_a_lo_pobre)
+["a lo pobre"](https://en.wikipedia.org/wiki/Lomo_a_lo_pobre)
